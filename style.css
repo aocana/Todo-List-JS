@@ -41,8 +41,9 @@ form input{
     color:#fff;
     font-size: 1em;
     border:none;
-    background-color: #ff7178;
-    border-radius: 100%;
+    /**background: #ff7178;
+    border-radius: 100%;*/
+    background: none;
     cursor: pointer;
     padding: 0.4em;
 }
@@ -51,6 +52,7 @@ form input{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0rem 0rem 5rem 0rem;
 }
 
 .todo-list{
@@ -60,13 +62,15 @@ form input{
 
 .todo{
     display: flex;
-    background: #fff;
+    color: #fff;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5rem;
+    margin: 1rem;
     padding: 1rem;
     border-radius: 10px;
-    background-color: #ff7178;
+    background: rgba(255,255,255,0.30);
+    box-shadow: 0 0 20px 0 rgba(0, 2, 32, 0.2);
+    border: 1px solid rgba(255,255,255,0.10);
     transition: all 0.5s ease;
 }
 
@@ -90,4 +94,22 @@ form input{
 
 select{
     cursor: pointer;
+}
+
+.trash-btn{
+    color: rgba(155, 0, 0, 0.5);
+    margin: 0 1.5em 0em 1.5em;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.complete-btn{
+    font-size: 1em;
+    color:#fff;
+    background: none;
+    border: none;
+    padding: 0.3em;
+    cursor: pointer;
+    background: #ff7178;
+    border-radius: 100%;
 }
