@@ -29,7 +29,8 @@
     <form>
         <input type="text" name="text" class="todo-input" placeholder="Write to do" >
         <button class="todo-Button" type="submit"><i class="fas fa-plus"></i></button>
-
+        
+        <i class="fas fa-filter"></i>
         <div class="select">
             <select name="todos" class="filter-todo">
                 <option value="all">All</option>
@@ -39,6 +40,12 @@
         </div>
 
     </form>
+    <div class="modal-container">
+        <div class="banner">
+            !!! Remember to write todo
+            <i class="fas fa-times-circle"></i>
+        </div>
+    </div>
 
     <div class="todo-container">
         <ul class="todo-list"></ul>
